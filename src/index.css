@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Beautiful gradients and animations */
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+    
+    /* Beautiful Gradients */
+    --hero-gradient: linear-gradient(135deg, 217 91% 60% 0%, 262 83% 58% 50%, 221 83% 53% 100%);
+    --hero-gradient-dark: linear-gradient(135deg, 262 83% 25% 0%, 221 83% 20% 50%, 217 91% 15% 100%);
+    --card-gradient: linear-gradient(145deg, 0 0% 100% 0%, 210 40% 98% 100%);
+    --card-gradient-dark: linear-gradient(145deg, 220 26% 8% 0%, 220 26% 12% 100%);
+    
+    /* Portfolio Colors */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
+    
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 26% 14%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 4px 6px -1px hsl(220 26% 14% / 0.1), 0 2px 4px -1px hsl(220 26% 14% / 0.06);
+    --shadow-card-hover: 0 20px 25px -5px hsl(220 26% 14% / 0.1), 0 10px 10px -5px hsl(220 26% 14% / 0.04);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme Colors */
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+    
+    --primary: 217 91% 65%;
+    --primary-foreground: 220 26% 6%;
+    --primary-glow: 217 91% 75%;
+    
+    --secondary: 220 26% 12%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 262 83% 63%;
+    --accent-foreground: 220 26% 6%;
+    
+    --muted: 220 26% 12%;
+    --muted-foreground: 215 16% 65%;
+    
+    --card: 220 26% 8%;
+    --card-foreground: 210 40% 98%;
+    
+    --border: 220 26% 14%;
+    --input: 220 26% 14%;
+    --ring: 217 91% 65%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Dark Shadows */
+    --shadow-glow: 0 0 50px hsl(var(--primary-glow) / 0.4);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-card-hover: 0 20px 25px -5px hsl(0 0% 0% / 0.4), 0 10px 10px -5px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .dark .hero-gradient {
+    background: var(--hero-gradient-dark);
+  }
+
+  /* Glow Effect for Hero Text */
+  .text-glow {
+    transition: all 0.3s ease;
+  }
+
+  .text-glow:hover {
+    text-shadow: 
+      0 0 20px hsl(var(--primary) / 0.4),
+      0 0 40px hsl(var(--primary) / 0.3),
+      0 0 60px hsl(var(--primary) / 0.2);
+    transform: scale(1.02);
+  }
+
+  /* Animated Gradients */
+  .gradient-animate {
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      45deg, 
+      hsl(var(--primary)),
+      hsl(var(--accent)),
+      hsl(var(--primary))
+    );
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+
+  /* Card Styles */
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+
+  .dark .card-gradient {
+    background: var(--card-gradient-dark);
+  }
+
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  /* Smooth Animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/70;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
