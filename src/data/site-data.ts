@@ -1,100 +1,90 @@
 export const personal = {
   name: "Sahil Mane",
-  title: "Aspiring Web Developer",
-  email: "sahilmane@example.com", 
+  title: "Aspiring Full Stack Developer",
+  email: "manesahil2808@gmail.com", 
   summary: "I'm passionate about creating modern, responsive web applications with clean design and smooth user experiences. I love experimenting with new technologies and building projects that solve real-world problems.",
-  photo: "/images/sahil.jpg",
+  photo: "/sahil.jpg",
   socials: [
     { 
       name: "instagram", 
-      url: "https://instagram.com/sahil_mane_dev",
+      url: "https://instagram.com/sahil_mane_1304",
       icon: "Instagram"
     },
     { 
       name: "linkedin", 
-      url: "https://linkedin.com/in/sahil-mane-dev",
+      url: "https://linkedin.com/in/sahil-mane-b113032ba",
       icon: "Linkedin"
     },
     { 
       name: "github", 
-      url: "https://github.com/sahilmane",
+      url: "https://github.com/sahilmaneweb",
       icon: "Github"
     },
     { 
       name: "mail", 
-      url: "mailto:sahilmane@example.com?subject=Let's%20Connect&body=Hi%20Sahil,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!",
+      url: "mailto:manesahil2808@gmail.com?subject=Let's%20Connect&body=Hi%20Sahil,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!",
       icon: "Mail"
     }
   ],
-  resumeUrl: "/resume.pdf"
+  resumeUrl: "/Resume.pdf"
 };
 
 export const projects = [
   {
-    id: "real-estate",
-    title: "Real Estate Web App",
-    description: "A comprehensive property management platform with advanced search filters, user authentication, and admin dashboard. Built with modern technologies for optimal performance.",
-    banner: "/images/projects/real-estate.jpg",
-    tags: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "JWT"],
+    id: "file-cloud",
+    title: "File-Cloud",
+    description: "A secure platform to upload, manage, and share files with short URLs and password protection.",
+    banner: "/images/projects/File-cloud.png",
+    tags: ["Next.js", "Tailwind CSS", "Supabase", "Clerk", "Nodemailer"],
     links: [
-      { name: "Live Demo", url: "https://real-estate-demo.vercel.app" },
-      { name: "GitHub", url: "https://github.com/sahilmane/real-estate-app" }
+      { name: "Live Demo", url: "https://file-cloud-ashy.vercel.app/" },
+      { name: "GitHub", url: "https://github.com/sahilmaneweb/FileCloud" }
     ]
   },
   {
     id: "ecommerce",
-    title: "E-Commerce Platform", 
-    description: "Full-featured online store with cart functionality, payment integration, and inventory management. Responsive design optimized for mobile shopping.",
-    banner: "/images/projects/ecommerce.jpg",
-    tags: ["React", "Redux", "Stripe API", "Express", "MongoDB"],
+    title: "Kitsune Store", 
+    description: "An e-commerce site for browsing, ordering, and tracking products with admin order and product management.",
+    banner: "/images/projects/Kitsune.png",
+    tags: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB", "JWT", "ImageKit", "Nodemailer"],
     links: [
-      { name: "Live Demo", url: "https://ecommerce-demo.vercel.app" },
-      { name: "Admin Panel", url: "https://ecommerce-admin.vercel.app" }
+      { name: "Live Demo", url: "https://kitsune-shop-five.vercel.app/" },
+      { name: "Admin Panel", url: "https://kitsune-shop-admin.vercel.app/" },
+      { name: "GitHub", url: "https://github.com/sahilmaneweb/kitsune-shop" }
     ]
   },
   {
     id: "task-manager",
-    title: "Collaborative Task Manager",
-    description: "Team productivity app with real-time collaboration, drag-and-drop task organization, and progress tracking. Perfect for remote teams.",
-    banner: "/images/projects/task-manager.jpg", 
-    tags: ["React", "TypeScript", "Socket.io", "Prisma", "Supabase"],
+    title: "FSD Management System",
+    description: "A role-based system for admins, mentors, and students to manage projects, batches, and attendance.",
+    banner: "/images/projects/Fsd.png", 
+    tags: ["Angular", "Spring Boot", "PostgreSQL", "JWT"],
     links: [
-      { name: "Live Demo", url: "https://task-manager-demo.vercel.app" },
-      { name: "GitHub", url: "https://github.com/sahilmane/task-manager" }
+      { name: "Live Demo", url: "https://fsd-project-sigma.vercel.app/" },
+      { name: "GitHub", url: "https://github.com/sahilmaneweb/FsdProject" }
     ]
   }
 ];
 
 export const experience = [
   {
-    company: "Scrappji",
-    role: "Web Development Intern",
-    period: "May 2024 – Aug 2024",
+    company: "DevionX",
+    role: "Full Stack Developer Intern",
+    period: "Dec 2024 – Mar 2025",
     details: [
-      "Built comprehensive ERP client portal using Next.js and Tailwind CSS",
-      "Implemented responsive design principles for mobile-first development", 
-      "Collaborated with backend team to integrate REST APIs",
-      "Optimized application performance resulting in 40% faster load times"
-    ]
-  },
-  {
-    company: "TechStart Solutions",
-    role: "Frontend Developer Intern", 
-    period: "Jan 2024 – Apr 2024",
-    details: [
-      "Developed interactive UI components using React and TypeScript",
-      "Implemented state management with Redux for complex applications",
-      "Participated in code reviews and agile development processes",
-      "Created reusable component library improving development efficiency"
+      "Built responsive web apps with Next.js, TailwindCSS, and performance optimizations.",
+      "Implemented SSR/SSG, lazy loading, code splitting, and image optimization.", 
+      "Designed modern, mobile-first UI/UX with accessibility and cross-device support.",
+      "Managed projects with Git/GitHub and deployed on Vercel & Netlify."
     ]
   }
 ];
 
 export const skills = {
-  Frontend: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-  Backend: ["Node.js", "Express.js", "Spring Boot", "REST APIs", "GraphQL"],
-  Tools: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "Docker"],
-  Databases: ["PostgreSQL", "MongoDB", "Supabase", "Firebase"]
+  Frontend: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+  Backend: ["Node.js", "Express.js", "Spring Boot", "REST APIs"],
+  Tools: ["Git", "GitHub", "VS Code", "Vercel", "Clerk", "Postman"],
+  Databases: ["PostgreSQL", "MongoDB", "Supabase"]
 };
 
 export const navigation = [
