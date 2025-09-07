@@ -111,7 +111,7 @@ export function About() {
                 className="relative z-10"
               >
                 <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden card-hover bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-6xl">👨‍💻</div>
+                  <img src={personal.photo} alt={personal.name} className="w-full h-full object-cover" />
                 </div>
               </motion.div>
               
