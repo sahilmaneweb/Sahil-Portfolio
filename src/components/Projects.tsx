@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/data/site-data";
-import realEstateImg from "/images/projects/File-cloud.png";
+import realEstateImg from "/images/projects/File.png";
 import ecommerceImg from "/images/projects/Kitsune.png";
 import taskManagerImg from "/images/projects/Fsd.png";
 

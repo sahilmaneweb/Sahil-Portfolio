@@ -31,10 +31,10 @@ export const personal = {
 
 export const projects = [
   {
-    id: "file-cloud",
+    id: "real-estate",
     title: "File-cloud",
     description: "A secure platform to upload, manage, and share files with short URLs and password protection.",
-    banner: "/images/projects/File-cloud.png",
+    banner: "/images/projects/File.png",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Clerk", "Nodemailer"],
     links: [
       { name: "Live Demo", url: "https://file-cloud-ashy.vercel.app/" },
