@@ -32,7 +32,7 @@ export const personal = {
 export const projects = [
   {
     id: "file-cloud",
-    title: "File-Cloud",
+    title: "File-cloud",
     description: "A secure platform to upload, manage, and share files with short URLs and password protection.",
     banner: "/images/projects/File-cloud.png",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Clerk", "Nodemailer"],
